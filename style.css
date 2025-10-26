@@ -25,6 +25,10 @@ h2 {
     padding-bottom: 5px;
 }
 
+/* style.css (只需修改這部分) */
+
+/* ... (其他不變的樣式) ... */
+
 code {
     /* 確保行內程式碼有清晰的背景 */
     background-color: #e9ecef; /* 淺灰色背景 */
@@ -51,18 +55,7 @@ pre code {
     /* 確保程式碼塊內的文字是白色，覆蓋掉上面的行內 code 樣式 */
     background-color: transparent; 
     color: #f8f9fa; 
-
-/* 警示框樣式 */
-.warning {
-    border: 1px solid #ffc107;
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 20px 0;
-    font-weight: bold;
 }
-
 .warning strong {
     color: #856404;
 }
