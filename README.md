@@ -29,7 +29,7 @@
 
 1.  進入客戶端主目錄：
 
-    D:\PC2-Pulish\CP14.Demo
+    D:\PC2-Pulish
 
 2.  **雙擊執行** `start` 腳本。
     > **⚠️ 注意：** 請務必執行 `start`，不要直接執行 `pc2team.bat`。
