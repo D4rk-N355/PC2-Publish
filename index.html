@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PC² 客戶端安裝教學</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.0/marked.min.js"></script>
+    <style>
+        /* 隱藏預設 GitHub README 樣式 */
+        .markdown-body { margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+    <div id="content">Loading installation guide...</div>
+
+    <script>
+        // 載入 README.md 內容
+        fetch('README.md')
+            .then(response => response.text())
+            .then(markdownText => {
+                // 將 Markdown 轉換為 HTML
+                document.getElementById('content').innerHTML = marked(markdownText);
+            });
+    </script>
+</body>
+</html>
