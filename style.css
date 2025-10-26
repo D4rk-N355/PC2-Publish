@@ -1,4 +1,6 @@
-/* style.css */
+/* style.css - 完整且優化版本 */
+
+/* --- 全域樣式 --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -12,6 +14,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* --- 標題樣式 --- */
 h1 {
     color: #007bff; /* 藍色標題 */
     border-bottom: 3px solid #007bff;
@@ -25,12 +28,10 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* style.css (只需修改這部分) */
-
-/* ... (其他不變的樣式) ... */
+/* --- 程式碼和預格式化文本樣式 --- */
 
 code {
-    /* 確保行內程式碼有清晰的背景 */
+    /* 行內程式碼樣式 */
     background-color: #e9ecef; /* 淺灰色背景 */
     color: #c7254e; /* 深紅色文字，凸顯程式碼 */
     padding: 2px 4px;
@@ -39,28 +40,39 @@ code {
 }
 
 pre {
-    /* 程式碼塊 (顯示您目錄結構的部分) */
-    background-color: #212529; /* 深色背景 (不變) */
-    color: #f8f9fa; /* 淺色文字 (白色/淺灰，確保在深色背景上可讀) */
+    /* 程式碼塊 (顯示目錄結構、腳本內容) */
+    background-color: #212529; /* 深色背景 */
+    color: #f8f9fa; /* 淺色文字 (解決反白問題的關鍵) */
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
-    /* 新增：明確定義列表和行高，防止反白變暗 */
     line-height: 1.5;
-    white-space: pre-wrap; /* 允許自動換行 */
+    white-space: pre-wrap;
 }
 
-/* 針對目錄結構，我們在 Markdown 中可能使用了列表或空行 */
 pre code {
-    /* 確保程式碼塊內的文字是白色，覆蓋掉上面的行內 code 樣式 */
+    /* 確保程式碼塊內部的 code 元素顏色正確 */
     background-color: transparent; 
     color: #f8f9fa; 
 }
+
+
+/* --- 警示框樣式 --- */
+.warning {
+    border: 1px solid #ffc107;
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-weight: normal;
+}
+
 .warning strong {
     color: #856404;
 }
 
-/* 連結按鈕化 */
+/* --- 連結按鈕樣式 --- */
 a {
     display: inline-block;
     padding: 10px 20px;
