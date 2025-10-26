@@ -26,19 +26,31 @@ h2 {
 }
 
 code {
-    background-color: #e9ecef;
+    /* 確保行內程式碼有清晰的背景 */
+    background-color: #e9ecef; /* 淺灰色背景 */
+    color: #c7254e; /* 深紅色文字，凸顯程式碼 */
     padding: 2px 4px;
     border-radius: 3px;
     font-size: 0.9em;
 }
 
 pre {
-    background-color: #212529; /* 深色背景 */
-    color: #fff; /* 白色文字 */
+    /* 程式碼塊 (顯示您目錄結構的部分) */
+    background-color: #212529; /* 深色背景 (不變) */
+    color: #f8f9fa; /* 淺色文字 (白色/淺灰，確保在深色背景上可讀) */
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
+    /* 新增：明確定義列表和行高，防止反白變暗 */
+    line-height: 1.5;
+    white-space: pre-wrap; /* 允許自動換行 */
 }
+
+/* 針對目錄結構，我們在 Markdown 中可能使用了列表或空行 */
+pre code {
+    /* 確保程式碼塊內的文字是白色，覆蓋掉上面的行內 code 樣式 */
+    background-color: transparent; 
+    color: #f8f9fa; 
 
 /* 警示框樣式 */
 .warning {
